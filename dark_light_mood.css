@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition-duration: 0.5s;
+}
+div {
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 30px;
+  transition-duration: 0.5s;
+  padding: 20px;
+}
+.dark {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+.light {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.rotate {
+  animation: rotateIcon 0.7s linear;
+}
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
